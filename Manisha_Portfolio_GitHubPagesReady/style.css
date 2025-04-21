@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fffaf0;
+    color: #0f172a;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background: #fef6e4;
+}
+.intro-text h1 { font-size: 3rem; font-weight: bold; }
+.profile-pic img { width: 300px; border-radius: 50%; }
+.about-section, .skills-section, .what-i-do, .experience-section, footer {
+    padding: 3rem;
+}
+.skill-bar {
+    margin: 1rem 0;
+}
+.skill-bar .bar {
+    height: 10px;
+    background: #f4a261;
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+footer {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-top: 1px solid #e2e8f0;
+}
