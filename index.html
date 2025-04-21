@@ -1,139 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manisha Vegyarapu | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; }
-    nav {
-      display: flex; justify-content: center;
-      background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 1rem;
-    }
-    nav a {
-      margin: 0 1rem; text-decoration: none; font-weight: 600;
-      color: #1a1a40; transition: 0.3s;
-    }
-    nav a:hover { color: #4f46e5; }
-    header {
-      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
-      padding: 3rem 2rem; background: #f0f4ff; animation: slideIn 1s ease-out;
-    }
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .text-content {
-      flex: 1; min-width: 300px;
-    }
-    .text-content h5 { font-size: 1rem; color: #6b7280; }
-    .text-content h1 { font-size: 2.5rem; font-weight: 700; margin: 0.3rem 0; }
-    .text-content h2 { font-size: 1.2rem; color: #4f46e5; margin-bottom: 1rem; }
-    .text-content p { margin: 0.4rem 0; font-size: 1rem; }
-    .text-content i { margin-right: 0.5rem; color: #4f46e5; }
-    .profile, .profile2 {
-      flex: 1; display: flex; justify-content: center; padding: 1rem;
-    }
-    .profile img, .profile2 img {
-      width: 230px; height: 230px; object-fit: cover;
-      border-radius: 50%; border: 4px solid #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease-in-out;
-    }
-    .profile img:hover, .profile2 img:hover { transform: scale(1.05); }
-
-    section { padding: 3rem 2rem; max-width: 900px; margin: auto; }
-    h2 { color: #1a1a40; font-size: 1.8rem; margin-bottom: 1rem; }
-
-    #skillsChart {
-      width: 100%; max-width: 600px; margin: 2rem auto;
-      animation: fadeIn 2s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #f1f5f9;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Manisha Vegyarapu - Senior Data Analyst</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <header class="hero-section">
+        <div class="intro-text">
+            <h4>Hello, my name is</h4>
+            <h1>Manisha Vegyarapu</h1>
+            <h3>Senior Data Analyst</h3>
+            <div class="contact-icons">
+                <p>📧 manishaatwork2317@gmail.com</p>
+                <p>📞 929-242-6868</p>
+            </div>
+        </div>
+        <div class="profile-pic">
+            <img src="assets/profile.jpg" alt="Manisha Vegyarapu" />
+        </div>
+    </header>
 
-  <header>
-    <div class="text-content">
-      <h5>HELLO, MY NAME IS</h5>
-      <h1>Manisha Vegyarapu</h1>
-      <h2>Senior Data Analyst</h2>
-      <p><i class="fas fa-envelope"></i> manishavegyarapu@gmail.com</p>
-      <p><i class="fas fa-phone"></i> +1 989-400-1789</p>
-    </div>
-    <div class="profile">
-      <img src="IMG_8893.jpg" alt="Manisha Vegyarapu">
-    </div>
-  </header>
+    <section class="about-section reveal">
+        <h2>About Me</h2>
+        <p>I’m a Senior Data Analyst and former Capgemini Senior Analyst, based in Tennessee, with over 3 years of experience in cloud data engineering, scalable ETL pipeline development, and analytics.</p>
+        <p>Empowering data-driven decisions through cloud engineering and advanced analytics.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a dynamic and detail-oriented Data Engineer with over 3 years of experience designing cloud-native data pipelines and analytics systems. At Capgemini, I’ve built robust, scalable solutions using AWS and Azure platforms, helping clients improve data access, reduce processing time, and generate actionable insights. I specialize in SQL, Python, Hadoop, and data modeling — and I’m passionate about leveraging cloud technologies to turn complex data into business growth. I thrive in fast-paced environments where innovation and data-driven strategies make a real impact.</p>
-    <div class="profile2">
-      <img src="IMG_3671.jpg" alt="Second Photo">
-    </div>
-  </section>
+    <section class="services-section reveal">
+        <h2>What I Do</h2>
+        <div class="services">
+            <div><strong>☁️ Cloud & IT Infrastructure</strong><p>I specialize in server management, optimization, and secure business operations.</p></div>
+            <div><strong>⚙️ IT Support & Automation</strong><p>Experienced in ServiceNow, provisioning, patching, and backup strategies.</p></div>
+            <div><strong>🔐 Security & Compliance</strong><p>I ensure risk management, monitoring solutions, and access control best practices.</p></div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills Chart</h2>
-    <canvas id="skillsChart"></canvas>
-  </section>
+    <section class="skills-section reveal">
+        <h2>My Skills</h2>
+        <div class="skill-bar"><span>Cloud Infrastructure Management</span><div class="bar" style="width: 97%;"></div></div>
+        <div class="skill-bar"><span>IT Support & Troubleshooting</span><div class="bar" style="width: 94%;"></div></div>
+        <div class="skill-bar"><span>ServiceNow & Automation</span><div class="bar" style="width: 96%;"></div></div>
+        <div class="skill-bar"><span>System Security & Compliance</span><div class="bar" style="width: 94%;"></div></div>
+        <div class="skill-bar"><span>Patching</span><div class="bar" style="width: 83%;"></div></div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> mvegyarapu81@students.cumberland.edu</p>
-    <p><strong>Phone:</strong> 989-400-1995</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com">linkedin.com/in/manisha</a></p>
-  </section>
+    <section class="experience-section reveal">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Senior Data Analyst – Capgemini (2023–2024)</h3>
+            <p>Engineered scalable data processing solutions, optimizing data collection and analytics to improve efficiency by 40%. Led analysis projects that enhanced customer retention by 25% using targeted insights. Designed complex data models to support key business decisions, increasing impact by 30%. Spearheaded improvements in data warehousing, cutting costs by 20% and improving data retrieval speeds by 25%.</p>
+        </div>
+        <div class="job">
+            <h3>Data Analyst – Capgemini (2021–2022)</h3>
+            <p>Conducted in-depth data analyses, boosting operational efficiency by 20%. Developed and implemented data validation protocols, reducing error rates by 15%. Transformed complex datasets into intuitive dashboards, increasing stakeholder engagement by 18%.</p>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Manisha Vegyarapu. All rights reserved.
-  </footer>
+    <section class="portfolio-section reveal">
+        <h2>Portfolio</h2>
+        <p>Showcase of projects and dashboards will go here. (Placeholder for visuals, Tableau links, and interactive reports.)</p>
+    </section>
 
-  <script>
-    const ctx = document.getElementById('skillsChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Python', 'SQL', 'AWS', 'Azure', 'ETL', 'Spark'],
-        datasets: [{
-          label: 'Proficiency',
-          data: [95, 90, 85, 80, 88, 82],
-          backgroundColor: '#4f46e5'
-        }]
-      },
-      options: {
-        scales: {
-          y: { beginAtZero: true }
-        },
-        responsive: true,
-        plugins: {
-          legend: { display: false }
-        }
-      }
-    });
-  </script>
+    <footer class="reveal">
+        <h2>Get in touch</h2>
+        <p>Based in New York, working worldwide.</p>
+        <div class="footer-links">
+            <div><strong>Social</strong><p>Instagram | LinkedIn | Behance | Dribbble</p></div>
+            <div><strong>Services</strong><p>UI/UX Design | Web Development | App Development</p></div>
+        </div>
+        <p class="copyright">© 2025 manisha vegyarapu</p>
+    </footer>
 </body>
 </html>
